@@ -1,3 +1,5 @@
+const { gql } = require("apollo-server");
+
 const typeDefs = gql`
   type Movie {
     id: Int!
