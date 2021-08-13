@@ -9,7 +9,7 @@ import logger from "morgan";
 const PORT = process.env.PORT;
 const app = express();
 const startServer = async () => {
-  const server = new ApolloServer({
+  const apollo = new ApolloServer({
     resolvers,
     typeDefs,
     context: async ({ req }) => {
@@ -20,16 +20,16 @@ const startServer = async () => {
     },
   });
 
-  await server.start();
+  await apollo.start();
 
   app.use(graphqlUploadExpress());
   app.use(logger("tiny"));
-  server.applyMiddleware({ app });
+  apollo.applyMiddleware({ app });
   app.use("/static", express.static("uploads"));
 
   await new Promise(r => app.listen({ port: PORT }, r))
     .then(() =>
-      console.log(`😎 Server is running on http://localhost:${PORT}${server.graphqlPath} ✅`)
+      console.log(`😎 Server is running on http://localhost:${PORT}${apollo.graphqlPath} ✅`)
     );
 }
 
