@@ -7,6 +7,11 @@ export default {
                 where: {
                     username,
                 },
+                // incluse mean loading element of array
+                // include: {
+                //     following: true,
+                //     followers: true,
+                // },
             }),
     },
 };
