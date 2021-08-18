@@ -24,9 +24,15 @@
 - [x] Like / Unlike Photo
 - [x] See Photo Likes
 - [ ] See Feed
+- [ ] See Photo Comments
+- [ ] Is Mine (Delete Photo)
 
 ## Comments
 
-- [ ] Comment on Photo
+- [x] Comment on Photo
 - [ ] Edit Comment
-- [ ] Delete Comment
+- [ ] Delete Comment (Is Mine)
+
+## Extras
+
+- [ ] S3 Image Upload
