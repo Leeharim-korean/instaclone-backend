@@ -30,8 +30,12 @@
 ## Comments
 
 - [x] Comment on Photo
-- [ ] Edit Comment
-- [ ] Delete Comment (Is Mine)
+- [x] Delete Comment
+- [x] Edit Comment
+
+## Refactor
+
+- [ ] Mutation Responses
 
 ## Extras
 

@@ -6,6 +6,6 @@ type MutationResponse {
     error: String
 }
     type Mutation {
-        toggleLike(id: Int!): MutationResponse!
+        editComment(id: Int!, payload: String!): MutationResponse!
     }
 `;
