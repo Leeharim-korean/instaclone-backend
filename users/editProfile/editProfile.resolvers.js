@@ -2,6 +2,7 @@ import { createWriteStream } from "fs";
 import bcrypt from "bcrypt";
 import client from "../../client";
 import { protectedResolver } from "../users.utils";
+import { uploadPhoto } from "../../shared/shared.utils";
 
 console.log(process.cwd());
 
@@ -13,6 +14,7 @@ const resolverFn = async (
     let avatarUrl = null;
 
     if (avatar) {
+        avatarUrl = await uploadPhoto(avatar, loggedInUser.id);
         const { filename, createReadStream } = await avatar;
         const newFilename = `${loggedInUser.id}-${Date.now()}-${filename}`;
         const readStream = createReadStream();
