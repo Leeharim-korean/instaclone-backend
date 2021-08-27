@@ -28,15 +28,13 @@
 - [ ] Is Mine (Delete Photo)
 
 ## Comments
-
 - [x] Comment on Photo
 - [x] Delete Comment
 - [x] Edit Comment
 
 ## Refactor
-
-- [ ] Mutation Responses
+- [x] Mutation Responses
 
 ## Extras
 
-- [ ] S3 Image Upload
+- [x] S3 Image Upload#
