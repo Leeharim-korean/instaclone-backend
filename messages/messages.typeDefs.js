@@ -4,7 +4,7 @@ export default gql`
     type Room {
         id: Int!
         users: [User]
-        messages: [Messages]
+        messages: [Message]
         createdAt: String!
         updatedAt: String!
     }
